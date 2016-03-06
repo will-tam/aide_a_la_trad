@@ -1,0 +1,15 @@
+Application web permettant d'avoir un texte et sa traduction visualisable ensembles.
+
+L'édition se fait dans un textarea, l'autre texte étant dans un div. Ceci permet la coloration de la partie en traduction.
+
+Cette application étant pour mon propre usage, et les textes devant être compilés dans Tex/LaTex, les balises LaTex pour le japonais
+sont rajoutées à la sauvegarde du texte japonais. Elles sont enlevées au chargement du texte.
+
+Le nom des fichiers suit une syntaxe particulière ; la reconnaissance de la langue du contenu est réalisée par le -Fr ou -Jp.
+De plus, le fichier "frère" est déduit automatique grâce à ce format de nom de fichier.
+Il sera créé à la sauvegarde s'il n'éxistait pas. Sinon, une copie de sauvegarde est créée : nom_du_fichier.ext.timestamp
+
+Si un fichier ou un répertoire n'est pas accéssible en écriture par PHP, ceux-ci n'apparaissent pas dans la liste. 
+
+Cette application est fonctionnelle, MAIS il y a encore beaucoup de choses à faire pour être pleinement sans bug ou plus propre au niveau code (voir le TODO).
+Attention à vos fichiers. Faites vos sauvegardes et vérifiez que ceux-ci soient bien enregistrés avec vos modifications.

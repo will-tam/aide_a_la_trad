@@ -1,0 +1,4 @@
+Ceci
+est un texte totallement
+lambda. Il n'est là que pour l'exemple,
+de ce que peut être fait.

@@ -1,0 +1,13 @@
+21/12/2014 :
+        - Première version.
+        - La présentation n'est pas mal.
+        - L'édition se fait sur les deux divisions, du milieu et du bas. Un soulignage jaune indique la ligne en cours d'édition dans l'autre cadre.
+        - Le gros poblème ce sont les gros bugs :
+                - Le curseur retourne au début d'une ligne après le choix de la ligne avec celle-ci.
+                - Si la ligne du dessous est choisie, le curseur va parfois à la fin de la ligne précédente.
+                - Oublie de l'implémentation du changement de soulignement lorsqu'on change de ligne au clavier.
+
+XX/03/2015 :
+        - Refonte avec même présentation, mais une autre approche : seul le texte du cadre du milieu contient le texte éditer. Le cadre du bas contient sa traduction.
+        - Tous les fichiers du projet doivent être placés dans le répertoire ./Projet
+        - Un bouton permet le passage de l'un à l'autre.

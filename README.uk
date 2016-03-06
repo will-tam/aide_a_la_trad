@@ -1,0 +1,15 @@
+Web application to see a text and its translation together.
+
+The edition is workable in a textarea, the other text being in a div. This is enabled the coloration of the translating part.
+
+This app is for my own usage, and the texts should be compiled in Tex/LaTex, the japanese LaTex tags are added when the japanese file is saved.
+They are removed when the texte is loaded.
+
+The name of the files follows a special syntax : the language recognition is made with the -Fr or the -Jp.
+Furthermore, the "brother" file is automaticaly deducted with this file's name format.
+It will be created when saving it, if it didn't exist. Otherwise, a backup is created : nom_du_fichier.ext.timestamp.
+
+If a file or a directory isn't write enabled by PHP, these don't appear in the files list.
+
+This app is functional, BUT there are many things to do yet to be fully bugless or cleaner in the code (see TODO file).
+Take care at your files. Make backup and check these are saved with your modification.

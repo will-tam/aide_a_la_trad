@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aide à la traduction</title>
+<meta name="date" content="2016-02-23T22:10:51+0100" > <!-- Update -->
+<meta name="author" content="will" >
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="expires" content="Sat, 26 Jul 1997 05:00:00 GMT">
+<link href="css/mainView.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class = "chooseFiles hidden"
+     id="chooseFiles">
+<div class="title">Choisissez votre fichier (ESC pour fermer)</div>
+</div>
+
+<div class="buttons">
+<button type="button" id="new">Nouveau</button>
+<!--
+<select name="lang" id="lang">
+<option value="Fr" label="Français">Français</option>
+<option value="Jp" label="nihongo">日本語</option>
+</select>
+-->
+<button type="button" id="save">Sauver</button>
+</div>
+
+<div class="contenerText1" contenteditable="false">
+<div class="textInfo"
+     id="textInfo1">
+<span id="fileTextView">Fichier 1</span>
+</div>
+<div class="textView"
+     id="textView"
+     contenteditable="false"> </div>
+</div>
+
+<div class="buttonChange" >
+<button type="button" id="change">
+<img src="gfx/up_down.svg" width="24px" height="24px" alt="">
+</button>
+</div>
+
+<div class="contenerText2"
+     contenteditable="false">
+<div class="textInfo"
+     id="textInfo2">
+<span id="fileTextEdit">Fichier 2</span>
+</div>
+<textarea class="textEdit"
+          id="textEdit"> </textarea></div>
+
+<script src="js/datas.js"></script>
+<script src="js/actionsOnEvents.js"></script>
+<script src="js/View.js"></script>
+<script src="js/AjaxTraitementClass.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

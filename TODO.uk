@@ -1,0 +1,17 @@
+(Pas de priorité dans les taches)
+
+- Force language according to to the navigator language.
+
+- Force language by central button pressing or a selection list.
+
+- Putting the whole messages (errors and info) in a different file by languages. Recreating an I18N or something like, in JS. To see if any lib already exists.
+
+- The selection have to stay  after switching the text !!!!
+
+- To search the Projet directory, the PHP function goes up one level, then goes down in the Projet directory. Ok.
+  But about the security level, is it not better to start from the site level to go in the directory of the project ?
+
+- I think i could improve the system of the undescore of the current parts.
+  To see for a version improvement.
+
+- To see the code inside TODOs.

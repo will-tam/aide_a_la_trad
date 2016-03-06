@@ -1,0 +1,17 @@
+(Pas de priorité dans les tâches)
+
+- Forcer la langue suivant la langue du navigateur.
+
+- Forcer la langue par appui sur un bouton central ou une liste de selection.
+
+- Mettre tous les messages (erreurs et info) dans un fichier par langues à part. En gros faire un I18N, ou un semblant en JS. Voir si pas de lib dans ce sens.
+
+- La sélection doit rester après le passage d'un texte à l'autre !!!!
+
+- Pour chercher le repertoire Projet, la fonction PHP remonte d'un niveau, puis redescend dans le répertoire Projet. Bon ok.
+  Mais au niveau sécurité, ne vaut-il pas mieux partir du niveau du site et aller dans le chemin du projet ?
+
+- J'ai l'impression que je pourrais améliorer le système de soulignage des parties en cours.
+  À voir pour une amélioration de version.
+
+- Voir les TODO répartis dans le code.

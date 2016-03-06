@@ -1,0 +1,22 @@
+21/12/2014 (20141203) :
+        - Première version.
+        - La présentation n'est pas mal.
+        - L'édition se fait sur les deux divisions, du milieu et du bas. Un soulignage jaune indique la ligne en cours d'édition dans l'autre cadre.
+        - Le gros poblème ce sont les gros bugs :
+                - Le curseur retourne au début d'une ligne après le choix de la ligne avec celui-ci.
+                - Si la ligne du sous la ligne editée précédament est choisie, le curseur va parfois à la fin de la ligne précédente.
+                - Oublie de l'implémentation du changement de soulignement lorsqu'on change de ligne au clavier.
+
+21/03/2015 (20150321) :
+        - Refonte avec même présentation, mais une autre approche : seul le texte du cadre du milieu contient le texte éditer. Le cadre du bas contient sa traduction.
+        - Tous les fichiers du projet doivent être placés dans le répertoire ./Projet
+        - Un bouton permet le passage de l'un à l'autre.
+
+01/01/2016 (20160101) :
+        - Reprise du projet avec refonte du tout (oui, pratiquement 1 an sans le toucher, ou même l'utiliser !).
+
+22/02/2016 (20160222) :
+        - Les erreurs provenant de PHP ne remontent plus via un callback, mais intégrées dans les alertes JS.
+        - ESC permet de cacher la liste des fichiers.
+        - Disparition du bouton des langues, pour le moment.
+        - Changement du timestamp des backups.

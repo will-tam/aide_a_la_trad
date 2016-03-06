@@ -1,0 +1,22 @@
+21/12/2014 (20141203) :
+        - First version.
+        - The presentation is not so bad.
+        - The edition is made on the twice divisions, at the middle and at the bottom. A yellow highlight shows the current editing line in the other frame.
+        - The big poblem is the BIG BUGS :
+                - The cursor returns at the begin of a line after choosing the with it.
+                - If the line under the previously editing line is choosen, the cursor goes at the end of the previous line, sometime.
+                - Forgot of the implementation of the highlight changing when we change the line by keyboard.
+
+21/03/2015 (20150321) :
+        - Redesign all with the same presentation, but by another : only th middle frame text contains the text to edit. The bottom frame contains its translation.
+        - All project files must be placed in the ./Projet directory.
+        - Switch beetween the both texts by a button.
+
+01/01/2016 (20160101) :
+        - Come back on this project with its redesign (yes, about 1 year without touch or use it !).
+
+22/02/2016 (20160222) :
+        - The errors coming from PHP are no more shown by a callback, but integrated inside the JS alerts.
+        - ESC key hides the files liste.
+        - The languages button disapeared, at that moment.
+        - Backups timestamp are changed.

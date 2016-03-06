@@ -1,0 +1,44 @@
+.boutons {
+    background-color: #0000AA; 
+    border: solid 1px; 
+    font-size: 100%; 
+    height: 65px; 
+    overflow: hidden; 
+    position: relative; 
+    left: 0px; 
+    right: 0px; 
+    top: 0px;
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.boutons #ouvrir {
+    float: left;    
+}
+
+.boutons #sauver {
+    float: right
+}
+
+.texte_fr {
+    background-color: #BBBBBB; 
+    border: solid 2px; 
+    overflow: hidden; 
+    position: relative;
+    padding: 10px 0;
+    text-align: center;
+}
+    #texteFr {
+        float: left;
+    }
+
+
+.texte_jp {
+    background-color: #EEEEEE; 
+    border: solid 2px; 
+    overflow: hidden; 
+    position: relative;
+    padding: 10px 0;
+    text-align: center;
+}
