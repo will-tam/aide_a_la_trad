@@ -25,6 +25,8 @@ if (ajax.xhr)    // AJAX ok ?
 /*
     actionsOnEvents.liClick.bind(actionsOnEvents),
 */
+    view.version.innerHTML = "ver : " + VER;
+
     view.newBtn.addEventListener("click", actionsOnEvents.newFile.bind(actionsOnEvents), false);
     //view.langSelect.addEventListener("change", actionsOnEvents.changeLang.bind(actionsOnEvents), false);
     view.saveBtn.addEventListener("click", actionsOnEvents.saveFile.bind(actionsOnEvents), false);

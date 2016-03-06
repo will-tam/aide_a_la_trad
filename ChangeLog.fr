@@ -20,3 +20,9 @@
         - ESC permet de cacher la liste des fichiers.
         - Disparition du bouton des langues, pour le moment.
         - Changement du timestamp des backups.
+
+03/03/2016 (20160228) :
+        - Ajout de l'affichage version.
+        - Nettoyage du CSS non utilisé.
+        - Nettoyage du HTML : . changement en nom plus explicite de certaines variables,
+                              . retrait de certaines balises <span> non utilisées.

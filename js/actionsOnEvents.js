@@ -75,19 +75,7 @@ var actionsOnEvents = {     // The space name of events actions.
         datasToSend.append("toFile2", this.view.textEdit.value);
 
         // Send to PHP.
-//        this.ajax.request("post", ["file", datasToSend], null, null, this.view.phpErrorDisplay);
         this.ajax.request("post", ["file", datasToSend], null, null);
-/*
-        if (datas.errorPHPRaised)
-        {
-            alert("J'ai eu un problème à  la sauvegarde !!");
-        }
-        else
-        {
-            alert("Sauver !!!");
-            datas.changed = false;
-        }
-*/
         evt.preventDefault();
     },
 

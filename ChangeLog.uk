@@ -20,3 +20,9 @@
         - ESC key hides the files liste.
         - The languages button disapeared, at that moment.
         - Backups timestamp are changed.
+
+03/03/2016 (20160228) :
+        - Adding of the version display.
+        - Cleaning of unused CSS.
+        - Cleaning of HTML : . changing with a more explicite name some variables,
+                             . deleting of some useless <span> tags.

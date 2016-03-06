@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Aide à la traduction</title>
-<meta name="date" content="2016-02-23T22:10:51+0100" > <!-- Update -->
+<meta name="date" content="2016-03-03T21:09:34+0100" > <!-- Update -->
 <meta name="author" content="will" >
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
@@ -20,6 +20,8 @@
 </div>
 
 <div class="buttons">
+<div id="version">version</div>
+<div>
 <button type="button" id="new">Nouveau</button>
 <!--
 <select name="lang" id="lang">
@@ -29,12 +31,10 @@
 -->
 <button type="button" id="save">Sauver</button>
 </div>
-
-<div class="contenerText1" contenteditable="false">
-<div class="textInfo"
-     id="textInfo1">
-<span id="fileTextView">Fichier 1</span>
 </div>
+
+<div class="contenerTextView" contenteditable="false">
+<div class="textInfo" id="fileTextView">Fichier 1</div>
 <div class="textView"
      id="textView"
      contenteditable="false"> </div>
@@ -46,15 +46,13 @@
 </button>
 </div>
 
-<div class="contenerText2"
+<div class="contenerTextEdit"
      contenteditable="false">
-<div class="textInfo"
-     id="textInfo2">
-<span id="fileTextEdit">Fichier 2</span>
-</div>
+<div class="textInfo" id="fileTextEdit">Fichier 2</div>
 <textarea class="textEdit"
           id="textEdit"> </textarea></div>
 
+<script src="js/version.js"></script>
 <script src="js/datas.js"></script>
 <script src="js/actionsOnEvents.js"></script>
 <script src="js/View.js"></script>

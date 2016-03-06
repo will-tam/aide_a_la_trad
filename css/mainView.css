@@ -48,6 +48,10 @@ ul ul li:hover {
     margin: 0 auto;
 }
 
+.buttons #version{
+    margin-top: -1em;
+}
+
 .buttons #new {
     float: left;
 }
@@ -61,7 +65,7 @@ ul ul li:hover {
     margin: 2px;
 }
 
-.contenerText1 {
+.contenerTextView {
     background-color: #BBBBBB;
     border: solid 2px;
     overflow: hidden;
@@ -70,7 +74,7 @@ ul ul li:hover {
     text-align: center;
 }
 
-.contenerText2 {
+.contenerTextEdit {
     background-color: #EEEEEE;
     border: solid 2px;
     overflow: hidden;
@@ -82,7 +86,7 @@ ul ul li:hover {
 .textInfo {
     margin: auto;
     background-color: white;
-    color: black;
+    color: maroon;
     font-weight: bold;
     text-align: left;
     border-style: groove;
@@ -91,14 +95,6 @@ ul ul li:hover {
 	overflow: hidden;
 	text-align: center;
 	width: 50%;
-}
-
-.textInfo #file1 {
-    color: maroon;
-}
-
-.textInfo #file2 {
-    color: maroon;
 }
 
 .textEdit {

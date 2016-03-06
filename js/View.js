@@ -7,7 +7,7 @@ function View()
 */
 {
     // Get the text elements id.
-    this.phpError = document.getElementById("phpError");
+    this.version = document.getElementById("version");
     this.fileTextView = document.getElementById("fileTextView");
     this.textView = document.getElementById("textView");
     this.fileTextEdit = document.getElementById("fileTextEdit");
