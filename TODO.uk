@@ -11,7 +11,11 @@
 - To search the Projet directory, the PHP function goes up one level, then goes down in the Projet directory. Ok.
   But about the security level, is it not better to start from the site level to go in the directory of the project ?
 
-- I think i could improve the system of the undescore of the current parts.
+- I think i could improve the system of the understrike of the current parts.
   To see for a version improvement.
 
 - To see the code inside TODOs.
+
+-BUGS : 
+    - Deletion of the \\ if nothing but these in the text.
+    - Sometimes, at the text changing, the understrike doesn't run anymore.

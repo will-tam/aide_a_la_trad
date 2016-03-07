@@ -15,3 +15,7 @@
   À voir pour une amélioration de version.
 
 - Voir les TODO répartis dans le code.
+
+-BUGS : 
+    - Effacement des \\ s'il n'y a plus que ça dans le texte.
+    - De temps en temps, au changement de texte, le soulignement ne fonctionne plus.
