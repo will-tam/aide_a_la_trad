@@ -16,6 +16,9 @@
 
 ●コードの中で色々なTODOを見るべきです。
 
-●バッグ : 
+- Retirer tous les innerHTML natifs. Remplacement par mon propre innerHTML.
+●本当のinnerHTMLを消す。私のinnerHTMLで。
+
+●バッグ :
         ★テキストの中に \\ しか何も書かないときに、\\ 消す。
         　　★時々、テキストが変える時に、下線は出さない。

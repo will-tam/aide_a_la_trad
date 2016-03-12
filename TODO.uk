@@ -16,6 +16,8 @@
 
 - To see the code inside TODOs.
 
--BUGS : 
+- Remove the whole ntive innerHTML. Replace it by my ownn innerHTML.
+
+-BUGS :
     - Deletion of the \\ if nothing but these in the text.
     - Sometimes, at the text changing, the understrike doesn't run anymore.

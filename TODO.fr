@@ -16,6 +16,8 @@
 
 - Voir les TODO répartis dans le code.
 
--BUGS : 
+- Retirer tous les innerHTML natifs. Remplacement par mon propre innerHTML.
+
+-BUGS :
     - Effacement des \\ s'il n'y a plus que ça dans le texte.
     - De temps en temps, au changement de texte, le soulignement ne fonctionne plus.
