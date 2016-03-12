@@ -9,6 +9,7 @@ var datas = {
                         };*/
     lfPos : new Array(),            // Position of the '\n' chars.
     textViewArray : new Array(),    // The lines'array where to split the text.
+    langUsed : "lfr",           // Used languag at the T time.
     textViewLength : 0,         // The lenght of this array.
     lineIndex : 0,              // Index of line in the lines' array to color.
     oldLineIndex : 0,          // Old index of line in the lines' array. Used to remove color.

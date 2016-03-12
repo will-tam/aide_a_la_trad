@@ -1,14 +1,15 @@
 (function () {
 /* Update 23/02/2016 */
 
+languages.changeTo(); // Init the language with the navigator one.
+
+//languages.changeTo("jp");
+
 // As used bind() function, have to check if it's ok. To see to write the polyfill if need.
 if (!Function.prototype.bind)
 {
-    var info = "Pas de fonction <cite>bind()</cite> présente. Navigateur ";
-    info += "<b><cite>" + navigator.userAgent +"</cite></b>";
-    info += " trop vieux ?<br>Regardez la compatibilité ici : ";
-    info += "<a href='https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Function/bind#Compatibilit%C3%A9_des_navigateurs' target='_blanck'>";
-    info += "https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Function/bind#Compatibilit%C3%A9_des_navigateurs</a>";
+    var info = languages.trans("info");
+    //info = '<img src="gfx/up_down.svg" width="24px" height="24px" alt="">';
     document.getElementsByTagName("body")[0].innerHTML = info;
 
     return false;
@@ -16,6 +17,8 @@ if (!Function.prototype.bind)
 
 var ajax = new AJAX();
 var view = new View();
+
+view.translateAll();
 
 if (ajax.xhr)    // AJAX ok ?
 {
@@ -28,7 +31,7 @@ if (ajax.xhr)    // AJAX ok ?
     view.version.innerHTML = "ver : " + VER;
 
     view.newBtn.addEventListener("click", actionsOnEvents.newFile.bind(actionsOnEvents), false);
-    //view.langSelect.addEventListener("change", actionsOnEvents.changeLang.bind(actionsOnEvents), false);
+    view.langSelect.addEventListener("change", actionsOnEvents.changeLang.bind(actionsOnEvents), false);
     view.saveBtn.addEventListener("click", actionsOnEvents.saveFile.bind(actionsOnEvents), false);
     view.changeBtn.addEventListener("click", actionsOnEvents.switchText.bind(actionsOnEvents), false);
     view.textEdit.addEventListener("click", actionsOnEvents.synchronize.bind(actionsOnEvents), false);

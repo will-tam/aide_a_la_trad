@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Aide à la traduction</title>
-<meta name="date" content="2016-03-03T21:09:34+0100" > <!-- Update -->
+<meta name="date" content="2016-03-12T19:18:18+0100" > <!-- Update -->
 <meta name="author" content="will" >
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
@@ -16,19 +16,17 @@
 
 <div class = "chooseFiles hidden"
      id="chooseFiles">
-<div class="title">Choisissez votre fichier (ESC pour fermer)</div>
+<div class="title" id='title'>(ESC)</div>
 </div>
 
 <div class="buttons">
 <div id="version">version</div>
 <div>
-<button type="button" id="new">Nouveau</button>
-<!--
-<select name="lang" id="lang">
-<option value="Fr" label="Français">Français</option>
-<option value="Jp" label="nihongo">日本語</option>
+<button type="button" id="new" label="Nouveau">Nouveau</button>
+<select name="langSelect" id="langSelect">
+<option value="fr" label="Français">Français</option>
+<option value="jp" label="nihongo">日本語</option>
 </select>
--->
 <button type="button" id="save">Sauver</button>
 </div>
 </div>
@@ -52,8 +50,13 @@
 <textarea class="textEdit"
           id="textEdit"> </textarea></div>
 
+<script src="js/lib/i18n.js"></script>
 <script src="js/version.js"></script>
+<script src="js/msg/messagesFR.js"></script>
+<script src="js/msg/messagesJP.js"></script>
+<script src="js/languages.js"></script>
 <script src="js/datas.js"></script>
+<script src="js/polyfill.js"></script>
 <script src="js/actionsOnEvents.js"></script>
 <script src="js/View.js"></script>
 <script src="js/AjaxTraitementClass.js"></script>

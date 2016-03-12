@@ -73,12 +73,12 @@ AJAX.prototype.request = function(way, commands, thisArg, callback)
                     }
                     else
                     {
-                        alert("Class AJAX.request GET - Que dois-je faire de la réponse AJAX ?");
+                        alert(languages.trans("ajaxReqAnswerGET"));
                     }
                 }
                 else
                 {
-                    alert("Class AJAX.request GET - statut " + this.status + " reçu !!! " + this.statusText);
+                    alert(languages.trans("ajaxReqStatusGET") + this.status + " - " + this.statusText);
                 }
             }
         };
@@ -89,7 +89,7 @@ AJAX.prototype.request = function(way, commands, thisArg, callback)
         }
         else if ((command === "file") && (typeof argu === "undefined"))
         {
-            alert("Class AJAX.request GET - Pas d'arguments sur la commande 'file' !");
+            alert(languages.trans("ajaxReqNoArgGET"));
             return false;
         }
         else
@@ -109,12 +109,12 @@ AJAX.prototype.request = function(way, commands, thisArg, callback)
                     {
                         callback.call(thisArg, this.responseText);  // Should be usefull to debug something.
                     }
-                    alert("Fichiers sauvés !");
+                    alert(languages.trans("savedFiles"));
                     datas.changed = false;
                 }
                 else
                 {
-                    alert("Class AJAX.request POST - statut " + this.status + " reçu !!! " + this.statusText + "\n !!! Les fichiers ont pu ne pas être sauvés !!!");
+                    alert(languages.trans("ajaxReqStatusNoSavedPOST") + this.status + " - " + this.statusText);
                 }
             }
 /*
@@ -140,7 +140,7 @@ AJAX.prototype.request = function(way, commands, thisArg, callback)
         };
         if ((command === "file") && (typeof argu === "undefined"))
         {
-            alert("Class AJAX.request POST - Pas d'arguments sur la commande 'file' !");
+            alert(languages.trans("ajaxReqNoArgPOST"));
             return false;
         }
         else
@@ -151,7 +151,7 @@ AJAX.prototype.request = function(way, commands, thisArg, callback)
     }
     else
     {
-        alert("Class AJAX.request - Commande inconnue !\n\n" + way + "\n" + command);
+        alert(languages.trans("ajaxReq") + way + "\n" + command);
         return false;
     }
 

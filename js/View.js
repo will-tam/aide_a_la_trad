@@ -8,12 +8,13 @@ function View()
 {
     // Get the text elements id.
     this.version = document.getElementById("version");
+    this.title = document.getElementById("title");
     this.fileTextView = document.getElementById("fileTextView");
     this.textView = document.getElementById("textView");
     this.fileTextEdit = document.getElementById("fileTextEdit");
     this.textEdit = document.getElementById("textEdit");
     this.newBtn = document.getElementById("new");
-    //this.langSelect = document.getElementById("lang");
+    this.langSelect = document.getElementById("langSelect");
     this.saveBtn = document.getElementById("save");
     this.changeBtn = document.getElementById("change");
 
@@ -31,8 +32,21 @@ View.prototype.ajaxError = function()
 */
 {
     this.textView.className = "onError textView";
-    this.textView.innerHTML = "Votre navigateur ne supporte pas l'objet XMLHTTPRequest !!!";
+    this.textView.innerHTML = languages.trans("ajaxErr");
     this.textEdit.innerHTML = "";
+}
+
+View.prototype.translateAll = function ()
+/*
+    Display an error formated message in textView element if there is AJAX init error.
+    Clean up textEdit element.
+    @Prameters : none.
+    @Return : none.
+*/
+{
+    this.newBtn.innerHTML = languages.trans("btnNew");
+    this.saveBtn.innerHTML = languages.trans("btnSave");
+    this.langSelect.value = languages.used;
 }
 
 View.prototype.toggleChooseFilesTo = function (state)

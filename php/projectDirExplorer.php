@@ -50,7 +50,7 @@ function makeFileList()
 */
 {
     // <ul firstTime='true'> will be used to know if it's a renew of the list.
-    $htmlList = "<div class='title'>Choisissez le fichier à traduire (ESC pour fermer)</div>\n<ul firsttime='true'>\n";    // Begin of list.
+    $htmlList = "<div class='title' id='title'>Choisissez le fichier à traduire (ESC pour fermer)</div>\n<ul firsttime='true'>\n";    // Begin of list.
     scanRFromDir(TOPREP, $projetList);
 
     if (is_array($projetList))

@@ -16,7 +16,7 @@ var actionsOnEvents = {     // The space name of events actions.
     {
         if (datas.changed)      // datas.changed => true if any changes in textarea (see main.js).
         {
-            alert("Données changées !\nVeuillez sauver d'abord.");
+            alert(languages.trans("dataChanged"));
         }
         else
         {
@@ -39,19 +39,22 @@ var actionsOnEvents = {     // The space name of events actions.
         }
     },
 
-    //changeLang : function(evt)
+    changeLang : function(evt)
     /*
         Called if "lang" button is clicked.
         Change the language of the interface and messages.
         @Parameters : evt = the event called it-self.
         @Return : none.
     */
-/*
     {
-    	alert("TODO - Changement de langue");
+        var langChoosen = this.view.langSelect.value;
+        //alert(langChoosen)
+        languages.changeTo(langChoosen);
+
+        this.view.translateAll();
         evt.preventDefault();
     },
-*/
+
     saveFile : function(evt)
     /*
         Called by clicking the "save" button.
