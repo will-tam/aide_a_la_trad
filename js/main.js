@@ -1,5 +1,5 @@
 (function () {
-/* Update 23/02/2016 */
+/* Update 12/03/2016 */
 
 languages.changeTo(); // Init the language with the navigator one.
 

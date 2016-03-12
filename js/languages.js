@@ -1,4 +1,4 @@
-/* Update 10/03/2016 */
+/* Update 12/03/2016 */
 
 var languages = {
     available : {"fr" : msgFR,  //@ of msgFR
