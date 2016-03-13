@@ -1,10 +1,12 @@
-/* Update 08/03/2016 */
+/* Update 13/03/2016 */
 
 var msgFR = {
         values : {
             // index.html
             "btnNew" : "Nouveau",
             "btnSave" : "Sauver",
+            "title" : "Choisissez le fichier à traduire (ESC pour fermer)",
+            "noList" : "<p>Pas de répertoire <span style='color: red; font-weight: bold;'>Projet</span> trouvé !</p>",
 
             // main.js
             "info" : "Pas de fonction <cite>bind()</cite> présente. Navigateur "+
@@ -28,13 +30,14 @@ var msgFR = {
             // actionsOnEvents.js
             "dataChanged" : "Données changées !\nVeuillez sauver d'abord.",
 
-            // filesTraitement.php
-
             // main.php
-
-            // projectDirExplorer.php
-
-            // tools.php
-
+            "nameFileBadFormat" : "Le nom du fichier n'est pas au bon format !",
+            "commandDisapeared" : "La commande a disparue !!",
+            "cantBackup" : "Backup des fichiers impossible !!",
+            "whyCantSave" : "Pourquoi la sauvegarde est devenue impossible ici ?",
+            "commandDisapearedOrBad" : "La commande disparue ou incorrecte !!",
+            "nf1Disapeared" : "Le nom du 1er fichier a disparu !!",
+            "nf2Disapeared" : "Le nom du 2nd fichier a disparu !!",
+            "iAmNotChuckNorris" : "Je n'ai pas compris ce que je devais faire !!"
         }
     };
