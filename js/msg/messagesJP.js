@@ -1,10 +1,12 @@
-/* Update 08/03/2016 */
+/* Update 13/03/2016 */
 
 var msgJP = {
         values : {
             // index.html
             "btnNew" : "別",
             "btnSave" : "セーブ",
+            "title" : "翻訳させるファイル為に選んでください (消すのはESC)",
+            "noList" : "<p><span style='color: red; font-weight: bold;'>Projet</span> ディレクトリ見つけませんでした！</p>",
 
             // main.js
             "info" : "<cite>bind()</cite>関数はありません. ナビゲーター "+
@@ -28,13 +30,14 @@ var msgJP = {
             // actionsOnEvents.js
             "dataChanged" : "データが変わった！\nまずセーブしてください。",
 
-            // filesTraitement.php
-
             // main.php
-
-            // projectDirExplorer.php
-
-            // tools.php
-
+            "nameFileBadFormat" : "ファイル名のフォーマットが分かりません！",
+            "commandDisapeared" : "コメンドが消しました！！",
+            "cantBackup" : "ファイルのバックアップは無理です！！",
+            "whyCantSave" : "ここでどうしてセーブは出来なくなりました？",
+            "commandDisapearedOrBad" : "消した、不正確なコマンド！！",
+            "nf1Disapeared" : "第１目ファイル名は消しました！！",
+            "nf2Disapeared" : "第２目ファイル名は消しました！！",
+            "iAmNotChuckNorris" : "何をやるはずは分かりません！！"
         }
     };
