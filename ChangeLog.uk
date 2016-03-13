@@ -21,8 +21,12 @@
         - The languages button disapeared, at that moment.
         - Backups timestamp are changed.
 
-03/03/2016 (20160228) :
+13/03/2016 (20160228) :
         - Adding of the version display.
         - Cleaning of unused CSS.
         - Cleaning of HTML : . changing with a more explicite name some variables,
                              . deleting of some useless <span> tags.
+        - Cleaning of some commented snippets.
+        - The site language is either reconnize by navigator language, or forced by selection.
+        - Site translation system. Thanks to Simon Rodwell for his "Simple i18n for JavaScript Apps"  found here : http://i18njs.com/
+        - Rewriting of some functions to implement the site translation.

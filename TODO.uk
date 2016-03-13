@@ -1,10 +1,4 @@
-(Pas de priorité dans les taches)
-
-- Force language according to to the navigator language.
-
-- Force language by central button pressing or a selection list.
-
-- Putting the whole messages (errors and info) in a different file by languages. Recreating an I18N or something like, in JS. To see if any lib already exists.
+(No priority in the tasks)
 
 - The selection have to stay  after switching the text !!!!
 
