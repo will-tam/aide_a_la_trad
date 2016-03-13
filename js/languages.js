@@ -1,9 +1,8 @@
-/* Update 12/03/2016 */
+/* Update 13/03/2016 */
 
 var languages = {
     available : {"fr" : msgFR,  //@ of msgFR
                  "jp" : msgJP //@ of msgJP
-                 //"en" : null //msgEN
                 },
 
     used : null,
@@ -16,7 +15,6 @@ var languages = {
         @Return : none.
     */
     {
-        //languages.trans = i18n.create(languages.available[languages.used]);
         if (lang)
         {
             this.used = lang;

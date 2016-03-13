@@ -1,4 +1,4 @@
-/* Update 23/02/2016 */
+/* Update 13/03/2016 */
 
 function AJAX()
 /*
@@ -29,7 +29,6 @@ function AJAX()
 	}
 }
 
-// AJAX.prototype.request = function(way, commands, thisArg, callback, callbackDBG)
 AJAX.prototype.request = function(way, commands, thisArg, callback)
 /*
     All AJAX requests are executed by this function. It runs a callback with result.
@@ -78,7 +77,7 @@ AJAX.prototype.request = function(way, commands, thisArg, callback)
                 }
                 else
                 {
-                    alert(languages.trans("ajaxReqStatusGET") + this.status + " - " + this.statusText);
+                    alert(languages.trans("ajaxReqStatusGET") + this.status + " - " + languages.trans(this.statusText));
                 }
             }
         };
@@ -114,29 +113,9 @@ AJAX.prototype.request = function(way, commands, thisArg, callback)
                 }
                 else
                 {
-                    alert(languages.trans("ajaxReqStatusNoSavedPOST") + this.status + " - " + this.statusText);
+                    alert(languages.trans("ajaxReqStatusNoSavedPOST") + this.status + " - " + languages.trans(this.statusText));
                 }
             }
-/*
-    	        switch(this.status)
-    	        {
-    	    	   case 200:  // It's ok, we return the parse of the questions.
-                        if (callback)
-                        {
-                            callback.call(thisArg, this.responseText);
-                        }
-    	                break;
-    	            case 404:   // main.php file not found, we return False.
-                        alert("Class AJAX.request POST - Traitement impossible !");
-                        //datas.errorPHPRaised = true;
-    	                break;
-    	            default:
-    	                alert("Class AJAX.request POST - statut " + this.status + " reçu !!! " + this.statusText);
-    	                //datas.errorPHPRaised = true;
-    	                break;
-    	        }
-            }
-*/
         };
         if ((command === "file") && (typeof argu === "undefined"))
         {

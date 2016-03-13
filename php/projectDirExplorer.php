@@ -1,5 +1,5 @@
 <?php
-/* Update 23/02/2016 */
+/* Update 13/03/2016 */
 
 define("TOPREP", "..".DIRECTORY_SEPARATOR."Projet");
 
@@ -50,7 +50,7 @@ function makeFileList()
 */
 {
     // <ul firstTime='true'> will be used to know if it's a renew of the list.
-    $htmlList = "<div class='title' id='title'>Choisissez le fichier à traduire (ESC pour fermer)</div>\n<ul firsttime='true'>\n";    // Begin of list.
+    $htmlList = "<ul firsttime='true'>\n";    // Begin of list.
     scanRFromDir(TOPREP, $projetList);
 
     if (is_array($projetList))
@@ -68,7 +68,7 @@ function makeFileList()
     }
     else
     {
-        $htmlList = "<div class='title'>Pas de répertoire <span class='onError'>Projet</span> trouvé !</div>";    // Begin of list.
+        $htmlList = "noList";
     }
 
     return $htmlList;

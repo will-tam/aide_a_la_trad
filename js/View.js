@@ -1,4 +1,4 @@
-/* Update 12/03/2016 */
+/* Update 13/03/2016 */
 
 function View()
 /*
@@ -8,7 +8,6 @@ function View()
 {
     // Get the text elements id.
     this.version = document.getElementById("version");
-    this.title = document.getElementById("title");
     this.fileTextView = document.getElementById("fileTextView");
     this.textView = document.getElementById("textView");
     this.fileTextEdit = document.getElementById("fileTextEdit");
@@ -19,8 +18,6 @@ function View()
     this.changeBtn = document.getElementById("change");
 
     this.chooseFiles = document.getElementById("chooseFiles");
-
-    this.liFiles = document.getElementsByTagName("li");
 }
 
 View.prototype.ajaxError = function()
@@ -44,8 +41,16 @@ View.prototype.translateAll = function ()
     @Return : none.
 */
 {
+    var title = document.getElementById("title");
+    var fileList = document.getElementById("fileList");
+
     this.newBtn.innerHTML = languages.trans("btnNew");
     this.saveBtn.innerHTML = languages.trans("btnSave");
+    title.innerHTML = languages.trans("title");
+    if (fileList.innerHTML.search(/^<p>/i) != -1)
+    {
+        fileList.innerHTML = languages.trans("noList");
+    }
     this.langSelect.value = languages.used;
 }
 
@@ -165,29 +170,39 @@ View.prototype.displayFilesList = function(listOfFiles)
     @Return : none.
 */
 {
+    var liFiles;
     var i, liFile;   // Used in loop.
+    var fileList = document.getElementById("fileList");
 
-    this.chooseFiles.innerHTML = listOfFiles;
-    this.toggleChooseFilesTo("show");
-
-    if (document.getElementsByTagName("ul")[0].getAttribute("firsttime") === "true")
+    if (listOfFiles === "noList")
     {
-        // First time for using this list.
-        document.getElementsByTagName("ul")[0].setAttribute("firsttime", "false"); // Prevent to do twice.
-        this.liFiles = document.getElementsByTagName("li");
+        fileList.innerHTML = languages.trans("noList");
+        this.toggleChooseFilesTo("show");
+    }
+    else
+    {
+        fileList.innerHTML = listOfFiles;
+        this.toggleChooseFilesTo("show");
 
-        for (i = 0; liFile = this.liFiles[i]; i++)
+        if (fileList.getElementsByTagName("ul")[0].getAttribute("firsttime") === "true")
         {
-            if (liFile.id.length > 0)
+            // First time for using this list.
+            fileList.getElementsByTagName("ul")[0].setAttribute("firsttime", "false"); // Prevent to do twice.
+            liFiles = fileList.getElementsByTagName("li");
+
+            for (i = 0; liFile = liFiles[i]; i++)
             {
-                liFile.addEventListener("click",
-                                                 actionsOnEvents.liClick.bind(actionsOnEvents),
-                                                 /*
-                                                 function (evt)
-                                                 {
-                                                    //sendOnClick.call(saveContext, evt)   // Instead of bind, to be ok with old versions.
-                                                 },*/
-                                                 false);
+                if (liFile.id.length > 0)
+                {
+                    liFile.addEventListener("click",
+                                                     actionsOnEvents.liClick.bind(actionsOnEvents),
+                                                     /*
+                                                     function (evt)
+                                                     {
+                                                        //sendOnClick.call(saveContext, evt)   // Instead of bind, to be ok with old versions.
+                                                     },*/
+                                                     false);
+                }
             }
         }
     }

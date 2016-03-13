@@ -1,4 +1,4 @@
-/* Update 12/03/2016 */
+/* Update 13/03/2016 */
 
 var actionsOnEvents = {     // The space name of events actions.
     // Need to know the instances name to interact with.
@@ -48,7 +48,6 @@ var actionsOnEvents = {     // The space name of events actions.
     */
     {
         var langChoosen = this.view.langSelect.value;
-        //alert(langChoosen)
         languages.changeTo(langChoosen);
 
         this.view.translateAll();

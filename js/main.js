@@ -1,9 +1,10 @@
 (function () {
-/* Update 12/03/2016 */
+/* Update 13/03/2016 */
 
 languages.changeTo(); // Init the language with the navigator one.
 
-//languages.changeTo("jp");
+//languages.changeTo("jp"); // Force to the Japanese.
+//languages.changeTo("fr"); // Force to the French.
 
 // As used bind() function, have to check if it's ok. To see to write the polyfill if need.
 if (!Function.prototype.bind)
@@ -25,9 +26,6 @@ if (ajax.xhr)    // AJAX ok ?
     actionsOnEvents.ajax = ajax;
     actionsOnEvents.view = view;
 
-/*
-    actionsOnEvents.liClick.bind(actionsOnEvents),
-*/
     view.version.innerHTML = "ver : " + VER;
 
     view.newBtn.addEventListener("click", actionsOnEvents.newFile.bind(actionsOnEvents), false);

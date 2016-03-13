@@ -1,5 +1,5 @@
 <?php
-/* Update 23/02/2016 */
+/* Update 13/03/2016 */
 
 /*
     Main part.
@@ -28,7 +28,7 @@ if (!empty($_GET))
             // And usefull for the next !!!
             if (!checkNameFormat($fileNameToEdit))
             {
-                sendError("Le nom du fichier n'est pas au bon format !");
+                sendError("nameFileBadFormat");
             }
 
             $fileNameToEdit = findFileBrother($fileNameToEdit);
@@ -54,7 +54,7 @@ if (!empty($_GET))
             }
             break;
         default:
-            sendError("La commande a disparue !!");
+            sendError("commandDisapeared");
             break;
     }
 }
@@ -94,13 +94,13 @@ else if(!empty($_POST))
         if ((!backup($fileFr)) ||
             (!backup($fileJp)))
         {
-            sendError("Backup des fichiers impossible !!");
+            sendError("cantBackup");
         }
 
         if ((!saveTo($fileFr, removeWinCR($textToFileFr))) ||
             (!saveTo($fileJp, japanese($textToFileJp))))
         {
-            sendError("Pourquoi la sauvegarde est devenue impossible ici ?");
+            sendError("whyCantSave");
         }
     }
     else
@@ -108,20 +108,20 @@ else if(!empty($_POST))
         // The generic variables are existed yet. TODO - See to change that !!! Cacaberkberk !!
         if (!in_array($cde, array("filesList", "file")))
         {
-            sendError("La commande disparue ou incorrecte !!");
+            sendError("commandDisapearedOrBad");
         }
         if (!$file1)
         {
-            sendError("Le nom du 1er fichier a disparu !!");
+            sendError("nf1Disapeared");
         }
         if (!$file2)
         {
-            sendError("Le nom du 2nd fichier a disparu !!");
+            sendError("nf2Disapeared");
         }
     }
 }
 else
 {
-    sendError("Je n'ai pas compris ce que je devais faire !!");
+    sendError("iAmNotChuckNorris");
 }
 ?>

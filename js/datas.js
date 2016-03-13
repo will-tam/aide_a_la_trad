@@ -14,7 +14,6 @@ var datas = {
     lineIndex : 0,              // Index of line in the lines' array to color.
     oldLineIndex : 0,          // Old index of line in the lines' array. Used to remove color.
     changed : false,            // Text changed in textEdit ?
-    //errorPHPRaised : false,        // true = if PHP send an error, otherwise false.
 
     textToArray : function (which)
     /*
@@ -23,8 +22,6 @@ var datas = {
         @Return : none.
     */
     {
-        //var i;
-
         datas.textViewArray = which.split("\n");
 
         //datas.lfPos.length = 0;     // Quickly empty array.
