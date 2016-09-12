@@ -1,5 +1,5 @@
 =======
-# aide_a_la_trad
+# help2translate
 
 Initial version : 20160101
 
